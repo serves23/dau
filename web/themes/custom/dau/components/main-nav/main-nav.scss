@@ -1,0 +1,132 @@
+.usa-logo {
+	margin-top: 1rem;
+	display: flex;
+	flex-direction: row;
+	@media (max-width: 480px) {
+		margin-top: 0px;
+	}
+	.logo-img {
+		@media (max-width: 480px) {
+			margin-top: 0px;
+		}
+		img {
+			order: 1;
+			width: 50%;
+			margin-left: 40px;
+			@media (max-width: 480px) {
+				margin-left: 0px;
+			}
+		}
+	}
+
+	.header-search {
+		order: 2;
+	}
+}
+
+header.usa-header {
+	background-color: rgba(0, 0, 0, 0.8);
+	border-bottom: 3px solid #ab1a2d;
+}
+
+.usa-banner__inner {
+	margin-left: 0;
+}
+.block-views-blockhero-block-1 {
+	z-index: -100000;
+  margin-top: -120px;
+
+	@media (max-width: 480px) {
+		margin-top: 0;
+	}
+}
+
+.usa-nav-container {
+	/* background-color:rgba(0, 0, 0, 0.8); */
+	margin-left: 0;
+	margin-right: 0;
+	max-width: 100%;
+
+	.usa-navbar {
+		width: inherit;
+	}
+
+	nav.usa-nav {
+		justify-content: left;
+		padding: 0;
+	}
+
+	.usa-nav__primary button {
+		text-transform: uppercase;
+		font-size: 12px;
+	}
+
+	/* nav {
+  background-color:rgba(0, 0, 0, 0.8);
+ } */
+
+	.usa-nav .usa-accordion {
+		.usa-nav__primary-item {
+			font-size: 0.93rem;
+			text-transform: uppercase;
+			font-weight: normal;
+			text-align: left;
+			.usa-nav__link {
+				font-weight: normal;
+				color: #fff;
+
+				@media (max-width: 480px) {
+					color: #000;
+				}
+			}
+		}
+	}
+
+	.usa-megamenu.usa-nav__submenu {
+		background-color: #fff;
+	}
+
+	.usa-nav__submenu-item {
+		a {
+			margin-left: auto;
+			margin-right: auto;
+			color: #333;
+			font-size: 14px;
+		}
+	}
+
+	.usa-megamenu.usa-nav__submenu {
+		left: 0;
+		margin-right: auto;
+		margin-left: auto;
+		min-width: 100%;
+		@media (max-width: 480px) {
+			margin-left: 0;
+		}
+		margin-top: 0px;
+	}
+
+	.usa-nav__primary button[aria-expanded="true"] {
+		background-color: #fff;
+		color: #ab1a2d;
+
+		span {
+			color: #ab1a2d;
+		}
+	}
+
+	ul.menu {
+		margin: 0;
+	}
+}
+
+.usa-megamenu.usa-nav__submenu::after,
+.usa-megamenu.usa-nav__submenu::before {
+	background-color: #fff;
+}
+
+.views-slideshow-controls-bottom {
+	margin-top: -60px;
+	z-index: 10000;
+	position: relative;
+}

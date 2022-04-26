@@ -1,0 +1,45 @@
+{#
+/**
+ * @file
+ * Default theme implementation for a branding block.
+ *
+ * Each branding element variable (logo, name, slogan) is only available if
+ * enabled in the block configuration.
+ *
+ * Available variables:
+ * - site_logo: Logo for site as defined in Appearance or theme settings.
+ * - site_name: Name for site as defined in Site information settings.
+ * - site_slogan: Slogan for site as defined in Site information settings.
+ *
+ * @ingroup themeable
+ */
+#}
+<div class="usa-logo" id="logo">
+
+  {% if site_logo %}
+  <a class="logo-img" href="{{ path('<front>') }}" accesskey="1" title="{{ 'Home'|t }}" aria-label="Home">
+    <img src="{{ site_logo }}" alt="{{ 'Home'|t }}" />
+  </a>
+  <div class="header-search">
+  <form class="usa-search" role="search">
+    <label class="usa-sr-only" for="search-field-search-field"> Search </label>
+    <input class="usa-input" id="search-field-search-field" type="search" name="search">
+    <button class="usa-button" type="submit">
+     
+
+      <img src="/themes/custom/dau/assets/img/usa-icons-bg/search--white.svg" class="usa-search__submit-icon" alt="Search">
+    </button>
+  </form>
+ </div>
+  <div class= "actions"> {{ drupal_menu('actions') }} </div>
+  {% elseif site_name %}
+  <em class="usa-logo__text">
+    <a href="{{ path('<front>') }}" accesskey="1" title="{{ 'Home'|t }}" aria-label="Home">
+      {{ site_name }}
+    </a>
+  </em>
+  {% endif %}
+  {% if site_slogan %}
+    <em class="usa-logo__text">{{ site_slogan }}</em>
+  {% endif %}
+</div>

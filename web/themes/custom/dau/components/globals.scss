@@ -1,0 +1,23 @@
+body {
+    font-size: 12px;
+    font-weight: normal;
+
+    a {
+      font-size: 12px;
+      font-weight: normal;
+    }
+
+    p {
+        font-size: 14px;
+    }
+}
+
+.usa-search [type=submit] {
+    padding-left: 0;
+    padding-right: 2.5rem;
+    background: #5f282c;
+    .usa-button {
+        background: #5f282c;
+    }
+    
+}
